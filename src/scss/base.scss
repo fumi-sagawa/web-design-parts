@@ -1,0 +1,19 @@
+/* パーツグリッド */
+.partsGrid {
+	display: grid;
+	grid-template-columns: minmax(8vw, 1fr) minmax(auto, 1088px) minmax(8vw, 1fr);
+	> * {
+		grid-column: 2;
+	}
+}
+
+/* 12分割グリッド */
+.grid12 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 10px;
+}
+
+.grid12 > * {
+	grid-column: 1 / -1;
+}
