@@ -6,7 +6,13 @@ module.exports = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		// target: '#svelte',
-		adapter: adapter()
+		adapter: adapter(),
+		files: {}
+		// vite: {
+		// 	optimizeDeps: {
+		// 		exclude: ['gsap', 'gsap/ScrollTrigger']
+		// 	}
+		// }
 	},
 	preprocess: sveltePreprocess({
 		// scss: true,

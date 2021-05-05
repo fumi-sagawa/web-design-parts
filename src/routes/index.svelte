@@ -2,28 +2,30 @@
 </script>
 
 <template lang="pug">
-  h1 tes
-    div.test
-      div.test2 111
-      div.test3 111
+.navOuter
+  .nav
+    a.nav__text(href=".") Home
+    a.nav__text(href="button") Button
+    a.nav__text(href="header") Header
+    a.nav__text(href="hero") Hero
+    a.nav__text(href="footer") Footer
 </template>
 
 <style>
-	h1 {
-		font-style: italic;
-		font-weight: 700;
-		display: flex;
+	.navOuter {
+		width: 100vw;
+		height: calc(var(--vh, 1vh) * 100);
+		display: grid;
 		align-content: center;
 		justify-content: center;
 	}
-	.test2 {
-		color: #000;
-		font-size: 30px;
+	.nav {
+		display: grid;
+		grid-row-gap: 20px;
 	}
-	.test3 {
-		min-height: calc(var(--vh, 1vh) * 10);
-		font-weight: 700;
-		color: $color-main;
-		font-size: rem(30px);
+	.nav__text {
+		font-size: 34px;
+		text-align: center;
+		font-weight: 100;
 	}
 </style>

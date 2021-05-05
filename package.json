@@ -26,6 +26,7 @@
   "type": "module",
   "dependencies": {
     "autoprefixer": "^10.2.5",
+    "gsap": "^3.6.1",
     "object-fit-images": "^3.2.4"
   }
 }
